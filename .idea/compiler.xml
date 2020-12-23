@@ -16,6 +16,12 @@
     </annotationProcessing>
     <bytecodeTargetLevel>
       <module name="CmdInterpreter" target="8" />
+      <module name="CmdInterpreterExtension" target="8" />
+      <module name="ConfiguratorExtension" target="8" />
+      <module name="Server" target="8" />
+      <module name="SimpleUIExtension" target="8" />
+      <module name="TestModule" target="8" />
+      <module name="TestService" target="8" />
     </bytecodeTargetLevel>
   </component>
 </project>
