@@ -1,0 +1,32 @@
+<server>
+	<settings>
+		<setting key="" val=""/>
+	</settings>
+
+    <services onLoad="start-all">
+
+		<service name="test" type="Test">
+			<settings>
+				<setting key="" val=""/>
+			</settings>
+			<modules>
+				<module name="test" type="Test">
+					<settings>
+						<setting key="" val=""/>
+					</settings>
+				</module>
+			</modules>
+		</service>
+
+    </services>
+
+    <actions>
+		<action id="start-all">
+			<action id="start-test"/>
+		</action>
+        <action id="start-test">
+            <service serviceName="test" method="start" delay="300"/>
+            <module serviceName="test" moduleName="test" method="start" delay="300"/>
+        </action>
+    </actions>
+</server>

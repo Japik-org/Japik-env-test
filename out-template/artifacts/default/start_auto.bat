@@ -1,0 +1,1 @@
+start server.jar -e SimpleUI -e Configurator -e CmdInterpreter -s

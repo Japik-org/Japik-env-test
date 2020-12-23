@@ -1,0 +1,43 @@
+<component name="ArtifactManager">
+  <artifact name="default">
+    <output-path>$PROJECT_DIR$/out/artifacts/default</output-path>
+    <root id="root">
+      <element id="dir-copy" path="$PROJECT_DIR$/out-template/artifacts/default" />
+      <element id="directory" name="core">
+        <element id="directory" name="modules">
+          <element id="archive" name="test-module.jar">
+            <element id="module-output" name="TestModule" />
+          </element>
+        </element>
+        <element id="directory" name="services">
+          <element id="archive" name="test-service.jar">
+            <element id="module-output" name="TestService" />
+          </element>
+        </element>
+        <element id="directory" name="lib">
+          <element id="library" level="project" name="Maven: commons-cli:commons-cli:1.4" />
+          <element id="library" level="project" name="Maven: com.sun.istack:istack-commons-runtime:4.0.0" />
+          <element id="library" level="project" name="Maven: org.javassist:javassist:3.27.0-GA" />
+        </element>
+        <element id="directory" name="utils" />
+        <element id="directory" name="extensions">
+          <element id="archive" name="simpleui-extension.jar">
+            <element id="module-output" name="SimpleUIExtension" />
+          </element>
+          <element id="archive" name="configurator-extension.jar">
+            <element id="module-output" name="ConfiguratorExtension" />
+          </element>
+          <element id="archive" name="cmdinterpreter-extension.jar">
+            <element id="module-output" name="CmdInterpreterExtension" />
+          </element>
+        </element>
+      </element>
+      <element id="archive" name="server.jar">
+        <element id="module-output" name="Server" />
+        <element id="directory" name="META-INF">
+          <element id="file-copy" path="$PROJECT_DIR$/Server/META-INF/MANIFEST.MF" />
+        </element>
+      </element>
+    </root>
+  </artifact>
+</component>
