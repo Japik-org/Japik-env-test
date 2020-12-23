@@ -1,3 +1,18 @@
 [submodule "Server"]
 	path = Server
 	url = https://github.com/p1k-Server/Server
+[submodule "TestService"]
+	path = dev/TestService
+	url = https://github.com/p1k-Server/TestService
+[submodule "TestModule"]
+	path = dev/TestModule
+	url = https://github.com/p1k-Server/TestModule
+[submodule "SimpleUIExtension"]
+	path = dev/SimpleUIExtension
+	url = https://github.com/p1k-Server/SimpleUIExtension
+[submodule "CmdInterpreterExtension"]
+	path = dev/CmdInterpreterExtension
+	url = https://github.com/p1k-Server/CmdInterpreterExtension
+[submodule "ConfiguratorExtension"]
+	path = dev/ConfiguratorExtension
+	url = https://github.com/p1k-Server/ConfiguratorExtension

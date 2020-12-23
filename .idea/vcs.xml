@@ -6,5 +6,7 @@
     <mapping directory="$PROJECT_DIR$/dev/CmdInterpreterExtension" vcs="Git" />
     <mapping directory="$PROJECT_DIR$/dev/ConfiguratorExtension" vcs="Git" />
     <mapping directory="$PROJECT_DIR$/dev/SimpleUIExtension" vcs="Git" />
+    <mapping directory="$PROJECT_DIR$/dev/TestModule" vcs="Git" />
+    <mapping directory="$PROJECT_DIR$/dev/TestService" vcs="Git" />
   </component>
 </project>

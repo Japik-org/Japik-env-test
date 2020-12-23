@@ -3,9 +3,9 @@
          xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
          xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
     <parent>
-        <artifactId>Server-env</artifactId>
+        <artifactId>Server-env-test</artifactId>
         <groupId>com.pro100kryto.server</groupId>
-        <version>1.0-SNAPSHOT</version>
+        <version>0.1</version>
     </parent>
     <modelVersion>4.0.0</modelVersion>
 
@@ -13,5 +13,12 @@
     <artifactId>dev</artifactId>
 
     <packaging>pom</packaging>
+    <modules>
+        <module>TestService</module>
+        <module>TestModule</module>
+        <module>SimpleUIExtension</module>
+        <module>ConfiguratorExtension</module>
+        <module>CmdInterpreterExtension</module>
+    </modules>
 
 </project>
