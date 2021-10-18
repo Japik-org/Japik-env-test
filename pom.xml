@@ -16,6 +16,7 @@
 
     <modules>
         <module>Server</module>
+        <module>extensions</module>
         <module>services</module>
 	    <module>modules</module>
         <module>utils</module>
