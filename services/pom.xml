@@ -15,6 +15,7 @@
     <packaging>pom</packaging>
 
     <modules>
-
+        <module>SimpleService</module>
+        <module>TestService</module>
     </modules>
 </project>

@@ -1,3 +1,9 @@
 [submodule "Server"]
 	path = Server
 	url = https://github.com/p1k-Server/Server
+[submodule "services/SimpleService"]
+	path = services/SimpleService
+	url = https://github.com/p1k-Server/SimpleService
+[submodule "services/TestService"]
+	path = services/TestService
+	url = https://github.com/p1k-Server/TestService
