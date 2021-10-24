@@ -13,6 +13,7 @@
         <module name="TestService" />
         <module name="SimpleService" />
         <module name="ConfiguratorExtension" />
+        <module name="main" />
         <module name="TestModule" />
       </profile>
     </annotationProcessing>
