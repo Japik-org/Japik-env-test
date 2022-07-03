@@ -1,8 +1,8 @@
-package com.pro100kryto.server.envtest;
+package com.japik.envtest;
 
-import com.pro100kryto.server.Server;
-import com.pro100kryto.server.logger.ILogger;
-import com.pro100kryto.server.service.IService;
+import com.japik.Japik;
+import com.japik.logger.ILogger;
+import com.japik.service.IService;
 
 import java.nio.file.Paths;
 
@@ -11,18 +11,16 @@ import java.nio.file.Paths;
 public class Main {
     public static void main(String[] args) throws Throwable {
 
-        final Server server = new Server(
+        final Japik server = new Japik(
                 Paths.get(System.getProperty("user.dir"))
         );
         final ILogger logger = server.getLoggerManager().getMainLogger();
 
         server.getLiveCycle().init();
-
-        final IService<?> testService = server.getServiceLoader()
-                .createService("Test", "Test");
-
         server.getLiveCycle().start();
 
+        final IService<?> testService = server.getServiceLoader()
+                .load("Test", "test");
         testService.getLiveCycle().init();
         testService.getLiveCycle().start();
 

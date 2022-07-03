@@ -7,18 +7,18 @@
         <sourceOutputDir name="target/generated-sources/annotations" />
         <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
         <outputRelativeToContentRoot value="true" />
-        <module name="SimpleUIExtension" />
-        <module name="CmdInterpreterExtension" />
-        <module name="Server" />
-        <module name="TestService" />
         <module name="SimpleService" />
-        <module name="ConfiguratorExtension" />
+        <module name="SimpleUIExtension" />
         <module name="main" />
+        <module name="Japik" />
+        <module name="TestService" />
         <module name="TestModule" />
       </profile>
     </annotationProcessing>
     <bytecodeTargetLevel>
       <module name="CmdInterpreter" target="8" />
+      <module name="ConfiguratorExtension" target="1.8" />
+      <module name="Server" target="1.8" />
     </bytecodeTargetLevel>
   </component>
 </project>

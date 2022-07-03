@@ -1,0 +1,16 @@
+Manifest-Version: 1.0
+Main-Class: com.japik.envtest.Main
+Class-Path: japik.jar
+    core/libs/byte-buddy-1.12.8.jar
+    core/libs/eclipse-collections-api-11.0.0.jar
+    core/libs/checker-qual-3.12.0.jar
+    core/libs/lombok-1.18.24.jar
+    core/libs/listenablefuture-9999.0-empty-to-avoid-conflict-with-guava.jar
+    core/libs/annotations-23.0.0.jar
+    core/libs/failureaccess-1.0.1.jar
+    core/libs/eclipse-collections-11.0.0.jar
+    core/libs/j2objc-annotations-1.3.jar
+    core/libs/error_prone_annotations-2.11.0.jar
+    core/libs/guava-31.1-jre.jar
+    core/libs/jsr305-3.0.2.jar
+    core/libs/commons-cli-1.5.0.jar

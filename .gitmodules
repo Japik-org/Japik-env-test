@@ -1,9 +1,9 @@
-[submodule "Server"]
-	path = Server
-	url = https://github.com/p1k-Server/Server
 [submodule "services/SimpleService"]
 	path = services/SimpleService
-	url = https://github.com/p1k-Server/SimpleService
+	url = https://github.com/Japik-org/SimpleService
 [submodule "services/TestService"]
 	path = services/TestService
-	url = https://github.com/p1k-Server/TestService
+	url = https://github.com/Japik-org/TestService
+[submodule "Japik"]
+	path = Japik
+	url = https://github.com/Japik-org/Japik.git

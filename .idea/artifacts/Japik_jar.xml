@@ -1,0 +1,27 @@
+<component name="ArtifactManager">
+  <artifact name="Japik:jar">
+    <output-path>$PROJECT_DIR$/out/artifacts/Japik_jar</output-path>
+    <root id="root">
+      <element id="archive" name="japik.jar">
+        <element id="module-output" name="Japik" />
+      </element>
+      <element id="directory" name="core">
+        <element id="directory" name="libs">
+          <element id="library" level="project" name="Maven: org.jetbrains:annotations:23.0.0" />
+          <element id="library" level="project" name="Maven: commons-cli:commons-cli:1.5.0" />
+          <element id="library" level="project" name="Maven: net.bytebuddy:byte-buddy:1.12.8" />
+          <element id="library" level="project" name="Maven: org.eclipse.collections:eclipse-collections:11.0.0" />
+          <element id="library" level="project" name="Maven: org.eclipse.collections:eclipse-collections-api:11.0.0" />
+          <element id="library" level="project" name="Maven: org.projectlombok:lombok:1.18.24" />
+          <element id="library" level="project" name="Maven: com.google.guava:guava:31.1-jre" />
+          <element id="library" level="project" name="Maven: com.google.guava:failureaccess:1.0.1" />
+          <element id="library" level="project" name="Maven: com.google.guava:listenablefuture:9999.0-empty-to-avoid-conflict-with-guava" />
+          <element id="library" level="project" name="Maven: com.google.code.findbugs:jsr305:3.0.2" />
+          <element id="library" level="project" name="Maven: org.checkerframework:checker-qual:3.12.0" />
+          <element id="library" level="project" name="Maven: com.google.errorprone:error_prone_annotations:2.11.0" />
+          <element id="library" level="project" name="Maven: com.google.j2objc:j2objc-annotations:1.3" />
+        </element>
+      </element>
+    </root>
+  </artifact>
+</component>

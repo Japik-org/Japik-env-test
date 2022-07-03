@@ -1,0 +1,18 @@
+<component name="InspectionProjectProfileManager">
+  <profile version="1.0">
+    <option name="myName" value="Project Default" />
+    <inspection_tool class="MisspelledHeader" enabled="true" level="WEAK WARNING" enabled_by_default="true">
+      <option name="CUSTOM_HEADERS">
+        <header value="Base-Package" />
+        <header value="Import-All-Packages" />
+        <header value="Lib-Impl-Jar" />
+        <header value="Lib-Shared-Jar" />
+        <header value="Module-Shared-Subtype" />
+        <header value="Service-Shared-Subtype" />
+        <header value="Shared-Subtype" />
+        <header value="Subtype" />
+        <header value="Version" />
+      </option>
+    </inspection_tool>
+  </profile>
+</component>

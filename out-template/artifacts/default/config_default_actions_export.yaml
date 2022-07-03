@@ -1,0 +1,127 @@
+export:
+
+  conditions:
+    - id: serverStarted
+      type: LiveCycle
+      statuses: [ STARTED ]
+      target: server
+
+    - id: targetInitialized
+      type: LiveCycle
+      statuses: [ INITIALIZED ]
+      target: current
+
+    - id: targetNotInitialized
+      type: LiveCycle
+      statuses: [ NOT_INITIALIZED ]
+      target: current
+
+    - id: targetStarted
+      type: LiveCycle
+      statuses: [ STARTED ]
+      target: current
+
+    - id: targetBroken
+      type: LiveCycle
+      statuses: [ BROKEN ]
+      target: current
+
+  actions:
+    # initialize server
+    - name: init
+      type: LiveCycle
+      method: init
+      target: server
+      delay: 150
+      condition: targetNotInitialized
+      onFail:
+        run:
+          - destroy.this
+
+    # start server
+    - name: start
+      type: LiveCycle
+      method: start
+      target: server
+      delay: 100
+      condition: serverStarted and targetInitialized
+      onFail:
+        run:
+          - stopForce.this
+
+    # stopSlow server
+    - name: stopSlow
+      type: LiveCycle
+      method: stopSlow
+      target: server
+      delay: 150
+      condition: targetStarted or targetBroken
+
+    # stopSlow or stopForce server
+    - name: stop
+      extends: stopSlow
+      onFail:
+        run:
+          - stopForce.this
+
+    # stopForce server
+    - name: stopForce
+      type: LiveCycle
+      method: stopForce
+      target: server
+      delay: 50
+      condition: targetStarted or targetBroken
+
+    # destroy server
+    - name: destroy
+      type: LiveCycle
+      method: destroy
+      target: server
+      delay: 50
+      condition: targetInitialized or targetBroken
+
+    # initialize all
+    - name: init-all
+      extends: init
+      target: *
+      onFail:
+        - break: false
+
+    # start all
+    - name: start-all
+      extends: start
+      target: *
+      onFail:
+        - break: false
+
+    # stopSlow all
+    - name: stopSlow-all
+      extends: stopSlow
+      target: *
+      onFail:
+        - break: false
+
+    - name: stop-all
+      extends: stop
+      target: *
+      onFail:
+        - break: false
+
+    # stopForce all
+    - name: stopForce-all
+      extends: stopForce
+      target: *
+      onFail:
+        - break: false
+
+    # initialize and start all
+    - name: start-up
+      run:
+        - init-all
+        - start-all
+
+    # stop and destroy all
+    - name: shut-down
+      run:
+        - stop-all
+        - destroy-all

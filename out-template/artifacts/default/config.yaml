@@ -1,0 +1,27 @@
+server:
+
+  import:
+    - config_default_actions_export.yaml
+    - config_test_export.yaml
+
+  # server core settings
+  settings:
+    - key: val
+
+  services:
+    # Service simple
+    - name: simple
+      type:
+        name: Simple
+        settings:
+          - key: val
+      settings:
+        - key: val
+
+  actions:
+    # initialize simple service
+    - name: init-simple
+      extends: init
+      target:
+        - type: service
+          name: simple

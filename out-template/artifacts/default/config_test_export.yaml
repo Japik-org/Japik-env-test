@@ -1,0 +1,61 @@
+export:
+
+  import:
+    - config_default_actions_export.yaml
+
+  services:
+    # Service test
+    - name: test
+      type:
+        name: Test
+        settings:
+          - key: val
+      settings:
+        - key: val
+      modules:
+        # Module test
+        - name: test
+          type: Test
+          settings:
+            - key: val
+
+  actions:
+    # initialize service and module
+    - name: init-test
+      extends: init
+      target:
+        - type: service
+          name: test
+        - type: module
+          service: test
+          name: test
+
+    # start module and service
+    - name: start-test
+      extends: start
+      target:
+        - type: module
+          service: test
+          name: test
+        - type: service
+          name: test
+
+    # stop service and module
+    - name: stop-test
+      extends: stop
+      target:
+        - type: service
+          name: test
+        - type: module
+          service: test
+          name: test
+
+    # destroy module and service
+    - name: destroy-test
+      extends: destroy
+      target:
+        - type: module
+          service: test
+          name: test
+        - type: service
+          name: test

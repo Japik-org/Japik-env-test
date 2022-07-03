@@ -1,9 +1,0 @@
-<component name="ProjectRunConfigurationManager">
-  <configuration default="false" name="default" type="JarApplication">
-    <option name="JAR_PATH" value="$PROJECT_DIR$/out/artifacts/default/server.jar" />
-    <option name="PROGRAM_PARAMETERS" value="-e SimpleUI -e Configurator -e CmdInterpreter -s" />
-    <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$\out\artifacts\default\" />
-    <option name="ALTERNATIVE_JRE_PATH" />
-    <method v="2" />
-  </configuration>
-</component>
