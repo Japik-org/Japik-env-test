@@ -15,7 +15,11 @@
             <element id="module-output" name="SimpleService" />
           </element>
         </element>
-        <element id="directory" name="modules" />
+        <element id="directory" name="modules">
+          <element id="archive" name="test-module.jar">
+            <element id="module-output" name="TestModule" />
+          </element>
+        </element>
         <element id="directory" name="libs">
           <element id="library" level="project" name="Maven: net.bytebuddy:byte-buddy:1.12.8" />
           <element id="library" level="project" name="Maven: commons-cli:commons-cli:1.5.0" />

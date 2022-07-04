@@ -7,3 +7,6 @@
 [submodule "Japik"]
 	path = Japik
 	url = https://github.com/Japik-org/Japik.git
+[submodule "modules/TestModule"]
+	path = modules/TestModule
+	url = https://github.com/Japik-org/TestModule
